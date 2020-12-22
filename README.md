@@ -18,7 +18,8 @@ Find the square root of the integer without using any Python library. You have t
   - Time complexity:
   We know that such algorithm is of complexity O(log(n)).
   We can verify this looking at the first elements:
-  n         : 2 3 4 5 6 7 8 9 10 ...16
+  n         : 2|3|4|5|6|7|8|9|10|...|16
+  ---------------------------------------
   iterations: 1 1 1 1 3 3 2 3 4 ....2
   
   so we have roughly for 2^k < n < 2^(k+1), k iterations on average. This indicates a complexity of O(log(n)).
