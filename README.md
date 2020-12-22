@@ -13,10 +13,14 @@ Find the square root of the integer without using any Python library. You have t
     - if n > (m+1)^2 then look for the solution in [m+1,..,n-1]
     - if m^2 <= n < (m+1)^2 then the solution is m
   
+  for n = 0 we have 0 and for n = 1 we have 1.
+  
+  - Time complexity:
   We know that such algorithm is of complexity O(log(n)).
   We can verify this looking at the first elements:
-  n _|_ 2 _|_ 3 _|_ 4 _|_ 5
+  n         : 2 3 4 5 6 7 8 9 10 ...16
+  iterations: 1 1 1 1 3 3 2 3 4 ....2
+  
+  so we have roughly for 2^k < n < 2^(k+1), k iterations on average. This indicates a complexity of O(log(n)).
 
-  - Time complexity: All operations have constant time.
-
-  - Space complexity:
+  - Space complexity: O(n) since we use a list of candidates of size n
