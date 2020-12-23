@@ -24,3 +24,15 @@ Find the square root of the integer without using any Python library. You have t
   so we have roughly for 2^k < n < 2^(k+1), k iterations on average. This indicates a complexity of O(log(n)).
 
   - Space complexity: O(n) since we use a list of candidates of size n
+
+
+
+
+## Problem 6: Max and Min in a Unsorted Array
+Look for smallest and largest integer from a list of unsorted integers. The code should run in O(n) time. Do not use Python's inbuilt functions to find min and max.
+
+  - Design choice: Sorting would allow to identify the lowest and highest elements. However I will not sort the list as this takes O(nlog(n)). I choose to traverse the list once and store the lowest and highest elements as we go through each element of the list.
+  
+  - Time complexity: Since we traverse the list only once to return the solution, the complexity is O(n). This is more efficient as sorting since we do not have to sort all the elements.
+  
+  - Space complexity: This algorithm has constant space. It does not change based on the size of the array.
