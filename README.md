@@ -28,6 +28,18 @@ Find the square root of the integer without using any Python library. You have t
 
 
 
+## Problem 4: Dutch National Flag Problem
+Given an input array consisting on only 0, 1, and 2, sort the array in a single traversal. You're not allowed to use any sorting function that Python provides.
+ 
+ - Design choice: Since we have only 3 classes (0,1,2), we can easily insert the 0 and 2 at the extremities but lack information on 1 since we must sort in a single pass.
+ I choose to prefill an array with '1's and will replace with 0 or 2 appropriately on the extremities while traversing the unsorted array.
+ 
+  - Time complexity: Since we traverse the list only once to return the solution, the complexity is O(n).
+  
+  - Space complexity: O(n) since we store the solution in a list of same size as the input.
+
+
+
 ## Problem 6: Max and Min in a Unsorted Array
 Look for smallest and largest integer from a list of unsorted integers. The code should run in O(n) time. Do not use Python's inbuilt functions to find min and max.
 
