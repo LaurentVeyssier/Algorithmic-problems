@@ -32,7 +32,7 @@ You are given a sorted array which is rotated at some random pivot point. Exampl
   - Design choice: The idea is to take advantage of the sorted array to perform binary search which complexity is O(log n). However we must adapt the approach since the array has a random pivot point. During binary search, we will check whether the mid index is before or after the pivot and adjust appropriately to the proper ordered sequence, either on the right (from start to mid index) or on the left (from mid index to end). If the target is within that ordered segment, we are back to a classic binary search.
   Otherwise, the problem is narrowed to a halved list which includes a random pivot, a situation similar to the starting point. The search is pursued recusively.
   
-  - Time complexity: The approach uses a binary search of complexity of O(log n).
+  - Time complexity: The approach uses a binary search of complexity O(log n).
   
   - Space complexity: This algorithm has constant space. Space complexity does not change depending on the size of the array.
   
