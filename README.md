@@ -1,5 +1,5 @@
 # Algorithmic-problems
-Resolve a set of problems using appropriate algorithm and design
+Resolve a set of problems using appropriate design for most efficient algorithm.
 
 This project solves a variety of topics related to basic algorithms. The objective is a clean and efficient solution in Python with an explanation of the efficiency of the code and design choices.
 
