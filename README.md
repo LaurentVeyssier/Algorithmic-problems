@@ -29,9 +29,12 @@ Find the square root of the integer without using any Python library. You have t
 ## Problem 2: Search in a Rotated Sorted Array
 You are given a sorted array which is rotated at some random pivot point. Example: [0,1,2,4,5,6,7] might become [4,5,6,7,0,1,2]. You are given a target value to search. If found in the array return its index, otherwise return -1. You can assume there are no duplicates in the array and your algorithm's runtime complexity must be in the order of O(log n).
 
-  - Design choice:
-  - Time complexity:
-  - Space complexity:
+  - Design choice: The idea is to take advantage of the sorted array to perform binary search which complexity is O(log n). However we must adapt the approach since the array has a random pivot point. During binary search, we will check whether the mid index is before or after the pivot and adjust appropriately to the proper ordered sequence, either on the right (from start to mid index) or on the left (from mid index to end). If the target is within that ordered segment, we are back to a classic binary search.
+  Otherwise, the problem is narrowed to a halved list which includes a random pivot, a situation similar to the starting point. The search is pursued recusively.
+  
+  - Time complexity: The approach uses a binary search of complexity of O(log n).
+  
+  - Space complexity: This algorithm has constant space. Space complexity does not change depending on the size of the array.
   
   
   ## Problem 3: Rearrange Array Elements
@@ -68,7 +71,7 @@ Look for smallest and largest integer from a list of unsorted integers. The code
   
   - Time complexity: Since we traverse the list only once to return the solution, the complexity is O(n). This is more efficient as sorting since we do not have to sort all the elements.
   
-  - Space complexity: This algorithm has constant space. It does not change based on the size of the array.
+  - Space complexity: This algorithm has constant space. Space complexity does not change depending on the size of the array.
   
   
   
