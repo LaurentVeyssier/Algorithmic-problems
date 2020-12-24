@@ -28,6 +28,7 @@ Find the square root of the integer without using any Python library. You have t
   - Space complexity: O(n) since we use a list of candidates of size n
 
 
+
 ## Problem 2: Search in a Rotated Sorted Array
 You are given a sorted array which is rotated at some random pivot point. Example: [0,1,2,4,5,6,7] might become [4,5,6,7,0,1,2]. You are given a target value to search. If found in the array return its index, otherwise return -1. You can assume there are no duplicates in the array and your algorithm's runtime complexity must be in the order of O(log n).
 
@@ -37,6 +38,7 @@ You are given a sorted array which is rotated at some random pivot point. Exampl
   - Time complexity: The approach is identical to a binary search of complexity O(log n).
   
   - Space complexity: This algorithm has constant space. Space complexity does not change depending on the size of the array.
+  
   
   
   ## Problem 3: Rearrange Array Elements
@@ -62,7 +64,8 @@ Given an input array consisting on only 0, 1, and 2, sort the array in a single 
 ps: We can also design a solution which provides O(n) time complexity with only one traversal and constant space complexity thanks to in-place sorting. This solution was seen during the course.
 
 ## Problem 5: Autocomplete with Tries
-For this problem, see jupyter notebook.
+For this problem, see [this](https://github.com/LaurentVeyssier/Algorithmic-problems/blob/main/Trie.ipynb) jupyter notebook.
+
 
 
 
@@ -74,6 +77,7 @@ Look for smallest and largest integer from a list of unsorted integers. The code
   - Time complexity: Since we traverse the list only once to return the solution, the complexity is O(n). This is more efficient as sorting since we do not have to sort all the elements.
   
   - Space complexity: This algorithm has constant space. Space complexity does not change depending on the size of the array.
+  
   
   
   
