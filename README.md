@@ -82,6 +82,6 @@ Look for smallest and largest integer from a list of unsorted integers. The code
 ## Problem 7: HTTPRouter using a Trie
 For this exercise we are going to implement an HTTPRouter like you would find in a typical web server using the Trie data structure. There are many different implementations of HTTP Routers such as regular expressions or simple string matching, but the Trie is an excellent and very efficient data structure for this purpose. The purpose of an HTTP Router is to take a URL path like "/", "/about", or "/blog/2019-01-15/my-awesome-blog-post" and figure out what content to return. In a dynamic web server, the content will often come from a block of code called a handler.
 
-  - Design choice:
-  - Time complexity:
-  - Space complexity:
+  - Design choice: The implementation of the HTTP router is done with a Trie structure.
+  - Time complexity: the find and insert operations take O(n) with n the number of parts in the path. We must traverse the tree to find an existing handler or to insert a new path and handler.
+  - Space complexity: O(n) since we store the parts of the path and create a list of the parts of length n for the lookup and add_handler functions.
