@@ -62,10 +62,7 @@ Given an input array consisting on only 0, 1, and 2, sort the array in a single 
 ps: We can also design a solution which provides O(n) time complexity with only one traversal and constant space complexity thanks to in-place sorting. This solution was seen during the course.
 
 ## Problem 5: Autocomplete with Tries
-See jupyter notebook.
-  - Design choice:
-  - Time complexity:
-  - Space complexity:
+For this problem, see jupyter notebook.
 
 
 
