@@ -44,7 +44,7 @@ Rearrange Array Elements so as to form two number such that their sum is maximum
 
   - Design choice: The approach is to first sort the input list. From there, we can easily build the solution. The largest numbers will start with the largest digits in the list. We want to distribute the largest digits by alternating between the 2 solution numbers so that to maximize the combination until all digits have been distributed. This will ensure the 2 solution numbers have identical number of digits (input list with even number of digits) or different by just 1 (input list with odd number of digits).
   
-  - Time complexity: MergeSort function guarantees a complexity of O(nlog(n)). The assembliy of the 2 solution numbers from the ordered list is O(n) since we traverse the list once. Therefore the overall operation is O(nlog(n)) in the worst case.
+  - Time complexity: MergeSort function guarantees a complexity of O(nlog(n)). Building the 2 solution numbers from the ordered list is O(n) since we traverse the list once. This leads to a complexity of O(nlog(n))+O(n). Therefore the overall operation is O(nlog(n)) in the worst case.
   
   - Space complexity: MergeSort function implies a space complexity of O(n). The assembly of the 2 solution numbers is also O(n). Overall, space complexity is O(n).
 
