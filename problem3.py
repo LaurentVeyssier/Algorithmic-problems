@@ -50,7 +50,6 @@ def rearrange_digits(input_list):
         return merge(left, right)
     
     output_list = mergesort(input_list)
-    print(output_list)
     
     # Assemble the solution O(n)
     # Initialize containers for the two numbers
