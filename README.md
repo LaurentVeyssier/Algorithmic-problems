@@ -1,5 +1,5 @@
 # Algorithmic-problems
-Resolve a set of problems using appropriate design and most efficient algorithm.
+Resolve a set of problems using appropriate design and most efficient algorithms.
 
 These programming challenges are part of the third project of UDACITY's [Data Structures & Algorithms Nanodegree Program](https://www.udacity.com/course/data-structures-and-algorithms-nanodegree--nd256).
 
