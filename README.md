@@ -59,6 +59,7 @@ Given an input array consisting on only 0, 1, and 2, sort the array in a single 
   
   - Space complexity: O(n) since we store the solution in a list of same size as the input.
 
+ps: We can also design a solution which provides O(n) time complexity with only one traversal and constant space complexity thanks to in-place sorting. This solution was seen during the course.
 
 ## Problem 5: Autocomplete with Tries
 See jupyter notebook.
