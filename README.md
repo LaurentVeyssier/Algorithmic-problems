@@ -1,6 +1,8 @@
 # Algorithmic-problems
 Resolve a set of problems using appropriate design for most efficient algorithm.
 
+These programming challenges are part of the second project of UDACITY's [Data Structures & Algorithms Nanodegree Program](https://www.udacity.com/course/data-structures-and-algorithms-nanodegree--nd256).
+
 This project solves a variety of topics related to basic algorithms. The objective is a clean and efficient solution in Python with an explanation of the efficiency of the code and design choices.
 
 ## Problem 1: Finding the Square Root of an Integer
